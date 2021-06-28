@@ -1,163 +1,51 @@
-## What is Git?
+**Most common Git commands**Using git –help in the command prompt (on Windows), terminal (for Mac), or shell (on Linux) will give you a list of the available Git commands:![img](https://lh6.googleusercontent.com/j-TRQVfJZ0pcw2RIRXUmpaDUXPgZ500uzd4JWih5wAfleAa22niEaqyTGHfjg5soe3OJCF9yr72gTAUdVJKppsto1tBAe4nJZLR9ZCmOXHSEgFWAQ5hkSWgGk6zrEqD5DZbfPzyj)**git config**Usage: git config –global user.name “[name]” Usage: git config –global user.email “[email address]”This command sets the author name and email address respectively to be used with your commits.![Git Config Command - Git Commands - Edureka](https://lh3.googleusercontent.com/TIXuy47AfdZ1wzuw9fiRgHBq7ChHIKViyeuxDWRnWJ7Rg_BKzTY2sVxahjzKKuzE3hw3skAC6UTb1ZyXXoFTy15N3adislyCWkF7OLNCuUwYSxdQL9BxiM5QNsU9VZVB-VDCAmNz)**git init**Usage: git init [repository name]This command is used to start a new repository.![GitInit Command - Git Commands - Edureka](https://lh3.googleusercontent.com/rVXVp_xfqTbJYKpXiTbcUL69-H81D55MGrhUY2hEVTWfimxo1j7lc0Fx0n7dUKRZNWvxOwdn-vqmQrebeq6fSNeZfQD3-OJ_A6pbji5hr_yUi_j570g1VDnGaqUlWSAfSSUm3anq)**git clone**Usage: git clone [url] This command is used to obtain a repository from an existing URL.![Git Clone Command - Git Commands - Edureka](https://lh5.googleusercontent.com/XrgFWWENljiOJ72e-w5wxxx254kh_gfKgx0G1cHUF2bZUHOvVWe2qLbx8LYQlAZ1B5XuY6m0qv5OzD1Tw27BPhfDm4UcLYeAq-dWBDlHY5s6iusF7QtvGZGznC2iG1j_YK1ee5En)**git add**Usage: git add [file]This command adds a file to the staging area.![Git Add Command - Git Commands - Edureka](https://lh3.googleusercontent.com/BLe0jF89kauMF4SE0OeaCjn8h37hyuNVul7kt0F2wu8gWIwgY9KxK-BlKPpuP56TfVfNSRLSKbVGQVeUN2etZlpXr2WUfmJxw0pJgvV39p41QjNynkJCsC92yRtU8IpFLKtmt15N)Usage: git add *  This command adds one or more to the staging area.![Git Add Command - Git Commands - Edureka](https://lh5.googleusercontent.com/NTrUGPPe2wsL9qon-KTNphQNSPPKIzLAHlMefZyxEtvIERBRK8WCZizTVw_Ua9GkEECGXv74LhdD3W14EUo85362WGi3jjQshSnoURcREo4QPMuJDhVHroSqwMnmt87A7BED6ptR)**git commit**Usage: git commit -m “[ Type in the commit message]” This command records or snapshots the file permanently in the version history.![Git Commit Command - Git Commands - Edureka](https://lh4.googleusercontent.com/UacVDE9qcgPxddgquVn-JpQJb22WbNhL-nMYPh308uPLm0K3iQBQAuO6gZPprFLresZLgszHkbYr4TGzhZqwHAenr1In-q6omlzQ6jNPhTuZ0Gc3SXh4XuRUgcI7d4fkyBsyez05)Usage: git commit -a This command commits any files you’ve added with the git add command and also commits any files you’ve changed since then.![Git Commit Command - Git Commands - Edureka](https://lh6.googleusercontent.com/heQWWxR8SL8xMzITJknwvIB37A-1H5ycTLiVJG2lwH65EhqbubZS176TMeZs7EYFHntj5yU2o5E0RcSyxWwFa2lMVj4lYTOkDtbf7BL4vFcn2Jee_GIJ9a-qX7YABLFj_Akux_S3)
 
-Git is the most popular version control system, its free, open source, fast and scalable.
 
-A version control system record the changes made to our code over time in a special database called repository, we can look at our project history and see who and why and if we screw something up we can easily reverse our project to an earlier state.
 
-With Git or any other version control system we can track history and work together.
 
-VCS fall into 2 categories, Centralized and Distributed.
+**git diff**Usage: git diff  This command shows the file differences which are not yet staged.![Git Diff Command - Git Commands - Edureka](https://lh4.googleusercontent.com/UXCT6YDUQ9a0brhhiT37H1eMfSuZiKdPTmMORp38wMk_QvCcuTirjLCprnpnONToY83jC6MaYLUsEO8KgXCmZVQA5puf9FaM8mcH-HMB6YdhpWw3OwjR4WGo1mD_aASZUA2vFdKj)Usage: git diff –staged This command shows the differences between the files in the staging area and the latest version present.![Git Diff Command - Git Commands - Edureka](https://lh4.googleusercontent.com/fhOTlQYhHB2pdi222dkSc7PqDFxYmfFW8WAG40QlpmlmyT30TJBoFCBGlOrUH0gGp5En8kYZ1pDOpnRB1g9WLLRqVJxVj8MCKn9Dl-smLkXv_rZKz8x5DA0I5_pfoZeEZUgSTiff)Usage: git diff [first branch] [second branch]  This command shows the differences between the two branches mentioned.![Git Diff Command - Git Commands - Edureka](https://lh3.googleusercontent.com/HyFL6nQWZ8_sWdfI_fABWIEvVBanGKcUqXeiHYp5f6-2z0t8WHIN66KSRnxVnzRLTzf_ClcTwMvAkIY-EhRCOaoO96nJuS59h9-UT-ykUOC_0A2s3OyYlQs5HSF8jpa8yHBIdl2_)
 
-Centralized system, all team members connect to a central server to get the later copy of the code and to share their changes with others. The problem with centralized architecture is the single point of failure. If the server goes offline we cannot collaborate or save snapshots of our project so we have to wait until the server comes back online.
 
-In Distributed systems we don’t have this problem, every team member has a copy of the project with his history in their machine so we can save snapshots of our project locally on our machine. If the central server is offline we can synchronize our work directly with others.
 
-Git is an example of a distributed version control systems.
+**git reset**Usage: git reset [file] This command unstages the file, but it preserves the file contents.![Git Reset Command - Git Commands - Edureka](https://lh4.googleusercontent.com/vCyvRBnsLeiElthE6k6IwjVyhBxmckiTgrhOFEtTyW-_29HTyGdBKZNTBY-rqzN3-8jZ3tEGOV-xpTrXzWh-lQWCxjEB06tEC8q_AGTOrXZPlgND523QAijfFAWToQy_cVW9Ynf2)Usage: git reset [commit]  This command undoes all the commits after the specific commit and preserves the changes locally.![Git Reset Command - Git Commands - Edureka](https://lh6.googleusercontent.com/pyzUOQBsI9NO2Ol_GES5xdSZ_Vb7DRJP_68-ivPZYEB6YUnJ0oV4w7fcewOloJqVmilor3amt6sV4X1UQm3Of_fGZA3NDQd7btjFbqJkXTUUtgZkdxa7R6-wkGPBY3_YbHsm92-F)Usage: git reset –hard [commit] This command discards all history and goes back to the specific commit.![Git Reset Command - Git Commands - Edureka](https://lh4.googleusercontent.com/wiG1L9W6EJ6deug0YhNDhXDNLd4C2ZUU4mSufdwIgyF6v-2Lo_jqJvZHY88uU0sj0dpDKP0ZaA6608wDvocX45qxF0Ibauwk05lXchKqdCE4JoabikhNVHsF86OSFYrnfiiQPea3)**git status**Usage: git status This command lists all the files that have to be committed.![Git Status Command - Git Commands - Edureka](https://lh4.googleusercontent.com/W7bJwmxqjEvf6oIkYmbRPQUR-UCImA2rkT5mtxflQbLwovhMJL4l1DNo96xQEAp4dYvVejokBUuqs7tGjBY4Z1xNapSmSuPGs7cKRTdEQUwWuX1SCV2MmyQwCvkx-UbC9Djuz5ld)**git rm**Usage: git rm [file]  This command deletes the file from your working directory and stages the deletion.![Git Rm Command - Git Commands - Edureka](https://lh6.googleusercontent.com/67-4US1-w11U419TOGdcZNnqUbLWbA1aeC2zUq65T7lKTKJpcOt0o2yfouRUzh8IqU8Pd55sTG10zbpaMMbu0i_DIaIGd5RTvXSP6_Usl5vDABhJDSHgjUO9zdF1_9pYIwjdnxpr)
 
-## Git rebase and squash | merge vs rebase
 
-### What is git merge?
 
-Git merge is a command that allows you to merge branches from Git.
+**git log**Usage: git log This command is used to list the version history for the current branch.![Git Log Command - Git Commands - Edureka](https://lh3.googleusercontent.com/PXyo9WXCtl9YvHPPCG7shxO4QgKcQJfQlSSDY1Qne767i84ROUmKG3gsvyx9jNN7ABjMrHMvBPyQWmcQ-ODHZs5NXt7DqC3-iZe6lNOS8lHzVI2IZVVubGJrP_PbRU8sGCqVMIJd)Usage: git log –follow[file] This command lists version history for a file, including the renaming of files also.![Git Log Command - Git Commands - Edureka](https://lh5.googleusercontent.com/onk3jkd4T842h_6__DOf-aL1h7FMMJ3J17nfUv2wXyVJPSVtvEVk3eN-UXS5arbPo0HFYVCyLj7jOIUXsQijKnf9G-FywkWjmk-nLirtdOUy7IaAZfA7f0NIcVmbuYPSlNy-bX72)
 
-### What Is Git Rebase?
 
-Git rebase is a command that allows developers to integrate changes from one branch to another.
 
-### Git Rebase vs. Merge: Similarities and Differences
 
-[Git rebase](https://www.perforce.com/blog/vcs/git-rebase-vs-merge-which-better#Git Rebase) and merge both integrate changes from one branch into another. Where they differ is how it's done. Git rebase moves a feature branch into a master. [Git merge](https://www.perforce.com/blog/vcs/git-rebase-vs-merge-which-better#Git Merge) adds a new commit, preserving the history.
 
-### Git Rebase vs. Merge: Which to Use
+**git show**Usage: git show [commit] This command shows the metadata and content changes of the specific commit.![Git Show Command - Git Commands - Edureka](https://lh6.googleusercontent.com/w2WgFRH0dIlH8ftRYqaG_jbW_YXnP1R_qVQeYA9e5kabdyhRqa4fotfdNsCDrtKzhoSshB8lEEbbTVd2-i1ma3d3f8XbFJJi3hOSKwuEF4DowOmK__V8iNpIsBWXiXgSrj26T_71)**git tag**Usage: git tag [commitID] This command is used to give tags to the specific commit.![Git Tag Command - Git Commands - Edureka](https://lh4.googleusercontent.com/SB7TVOXufKWiCwSL1ZG5ACHq1DBazeH5F8kE28WP8NmaHHwF_z8wipi7Ve1qx8dLfIjKdSl0gPwl60xVCA63dw5pf0-BghNaPZtCjS0Bb769UVk-bNjrKfomvEP7HmH88UMTLjI5)**git branch**Usage: git branch This command lists all the local branches in the current repository.![Git Branch Command - Git Commands - Edureka](https://lh5.googleusercontent.com/TKSv-8vjiIdU6lHGV3ZpRGXwvyrhc04MDoi6e7nFrdl7gOLkVSSpfMNkbbPZWQEywqrOAqfdLjR2JP0ivJdAQAVswPp_VHBKywpmi--W0WJEpIDxVSQ1bX1qMvgxMzEkPGULrVXC)Usage: git branch [branch name] This command creates a new branch.![Git Branch Command - Git Commands - Edureka](https://lh4.googleusercontent.com/xsVGgklBLzRMKwJVbT8eiDngNq89FyQ8fwT0IUKuMAVeJJO764ikNo7_Eaa1F1wiBnPj9jK8Rod6fonq9O_R2uvAcZYwd3f9C3rb4E8KPyCna_3pCfRFCj8tpSEQc34zd0YsraUC)Usage: git branch -d [branch name]  This command deletes the feature branch.![Git Branch Command - Git Commands - Edureka](https://lh5.googleusercontent.com/2x7an8yLWXjfd9s62wGFAkePfAbPFDIWUQqn1xILdBvm2zbQ6UpIx4Yf7RK_a9DSXBPUX4UA2xajZhPgHDw4zpSenulbn9b8g6lEi0pN1AKJgCrTfgmNuuBdY68_7zzG_VAxfUIX) **git checkout**Usage: git checkout [branch name] This command is used to switch from one branch to another.![Git Checkout Command - Git Commands - Edureka](https://lh3.googleusercontent.com/8pRMFYRXYGR-0bwBhXytPVyYRYmQe6eHxYE4Mav0cxf8TQ_ypBGbmJ2xHjIKR43s7zAj6FQhB5VhzZpM9047SCt7CZUf91XMSv3JiJ6T7V_Cu4HHcQYvaj2Zsb3lrjCFIWXZ8DfJ)Usage: git checkout -b [branch name] This command creates a new branch and also switches to it.![Git Checkout Command - Git Commands - Edureka](https://lh4.googleusercontent.com/ZUqFbB409zE7uQKUkjDYkl03EUS3lhLTNP4TrfSlVbC33odpBwQkd3YH9D8pP4W3vKpnDENCPTh-LFz7_BuRFZ0Mp2q-ujLhI8yu_iWBNt764w7iKchSXXDotXKrVjM2HOpLI6LY)**git merge**Usage: git merge [branch name] This command merges the specified branch’s history into the current branch.![Git Merge Command - Git Commands - Edureka](https://lh4.googleusercontent.com/28zYIBAU__1KCc7dDUKGYaSpserWt8qDSYBFpvfwtC7S-tj4i9-gXphwRI6a8XTnxbpsksJVIzyPKSTwE3CMWAMT34NgiZ5-vWYbf2CntUrm8xHWt7x73O2utRci5ZvFpxArEySv)**git remote**Usage: git remote add [variable name] [Remote Server Link] This command is used to connect your local repository to the remote server.![Git Remote Command - Git Commands - Edureka](https://lh3.googleusercontent.com/E_7Q4bnSrpumWpq8aAZS-tD6yJyqDvlEXZiB8ibnYOZtT2FOPC6umV2-8lujwg0FrGDzdZFdek-ogeyzDsIPrkb2F_D2V-HOLl3l5xZlHzpl0_U1sbOybA8ctMTBSEhoLDGsG3MC)**git push**Usage: git push [variable name] master This command sends the committed changes of the master branch to your remote repository.![Git Push Command - Git Commands - Edureka](https://lh4.googleusercontent.com/4zpZsUK0MSDrbg82l5TDr88wVMeTDS900DNe-6qIhG8OMnvKFqxvcPaDukM1XkW2xyaFeAmBLafAx_5pDA4djQb3OZo_cuybetC6HGPAbJyaE2G0GzYMTI7LaVkOdv_V2TSFwgSQ)Usage: git push [variable name] [branch] This command sends the branch commits to your remote repository.![Git Push Command - Git Commands - Edureka](https://lh3.googleusercontent.com/hopmPIvxA3cbs1ZLCleB7QgLv505ibkOHNvjDy2U02cyu-sa2_yn8UahN_U98ZACkCLHJx9ptHxU2nAsNwsXgTh433qkXBMaiY_UllYx03nqWe_OZan50gQuAWA6-PiYJxOCxkge)
 
-Some developers believe you should always rebase. And others think that you should always merge. Each side has benefits.
 
-### Benefits
 
-Here are the top three benefits for Git rebase and for Git merge.
+Usage: git push –all [variable name] This command pushes all branches to your remote repository.![Git Push Command - Git Commands - Edureka](https://lh5.googleusercontent.com/YbQIUD41yfMhsZwvT79XsDgsMrBe0XMsckQCCP8e5X_GDpz60EYvPc5yL9lN250h2tux-ETwAktCgBpXiKs8U77taXD6FVSWWnRyFbacZdvfZe-HueddyJcFFQLZP9ugjKKVxaDt)Usage: git push [variable name] :[branch name] This command deletes a branch on your remote repository.![Git Push Command - Git Commands - Edureka](https://lh5.googleusercontent.com/VUO1shzH-lM1rvM91KIyu6PEbcJ1thATk0i1xIezpdJu8lTSpJtX2eHcJQbFLSEmWKUsx6DnHlLRgN0ca9SWIcA7IouVRk16vR7WnOR6SWMrPchBNQ5bK6Lv8lBiCMVqozik_jyj)**git pull**Usage: git pull [Repository Link] This command fetches and merges changes on the remote server to your working directory.![Git Pull Command - Git Commands - Edureka](https://lh3.googleusercontent.com/VPEt_5L5z-3nD_eUMFXM4JFUIUpfWUKq6BMDiCY8JL5FFiAXpAcpQ7bH3UZLkZcU-HyB29RREPhKdwoUBvRTK1ikiEwrSgNwVf7Ivv5yUhc9014toysS8Np1SzRk5jWArhZOXHKE)**git stash**Usage: git stash save This command temporarily stores all the modified tracked files.![Git Stash Command - Git Commands - Edureka](https://lh6.googleusercontent.com/ctBxUzAuimZUnoWMXVij9-6EamuPE7rbNeA0vUgzjhd_9t2qHSYky_lpd00Evu86aHrkZfMG9XvzG-DZe7dwEAPyKzQLpYeZH8YWvPHexnO_3k0KQaQV8KogCyHW43XBEzog7sS3)Usage: git stash pop This command restores the most recently stashed files.![Git Stash Command - Git Commands - Edureka](https://lh3.googleusercontent.com/i2J3E4Y0jVHEhRxGweqHsFSd3hP5JQ8ag8jSDIGQ-ZnLGtNgtDzKAKexQxjb7tezDHeNySrIG3HljrXYn_rB439r0odYcxLRMor07vm5a-A9fPnfvNedDYyXnBYnlNep7se03OY5)Usage: git stash list This command lists all stashed changesets.![Git Stash Command - Git Commands - Edureka](https://lh4.googleusercontent.com/hmYoC4EepvO4Ksz55_hS4eSYiucckjthGBXmr1mujkbJBkhkwDMobnDOBttWP0Y9C37vteSR2Z6I9ibDgamGYQ3Q5eBu6G6sBdlySlspMSgH21N-wpr-1MR7K3rNAIqhAOcWKk76)Usage: git stash drop This command discards the most recently stashed changeset.![Git Stash Command - Git Commands - Edureka](https://lh4.googleusercontent.com/lU5qqiWgWDuW7G7XfCdk2BydStCCL4O5DNDjueqPeNMnsS9DI_d4pkRrtmfQcmrM_MPRGIgtR2SDc9_GPN-ReK2-t0HkRfnuyLISWGUpfS7aNhfW8MVvo_FygFbCvrEBdKSg_nVV)**Git Flow Branch Strategy**The main idea behind the [Git flow branching strategy](https://www.gitkraken.com/learn/git/git-flow) is to isolate your work into different types of branches. There are five different branch types in total:
+MainDevelopFeatureReleaseHotfix
+The two primary branches in Git flow are main and develop. There are three types of supporting branches with different intended purposes: feature, release, and hotfix.
+**Git Flow: Pros & Cons**The Git flow branching strategy comes with many benefits, but does introduce a few challenges.
+**The Benefits of Git Flow:**The various types of branches make it easy and intuitive to organize your work.The systematic development process allows for efficient testing.The use of release branches allows you to easily and continuously support multiple versions of production code.
+**The Challenges of Git Flow:**Depending on the complexity of the product, the Git flow model could overcomplicate and slow the development process and release cycle.Because of the long development cycle, Git flow is historically not able to support Continuous Delivery or Continuous Integration.
 
-#### Git Rebase
 
-- Streamlines a potentially complex history.
-- Avoids merge commit “noise” in busy repos with busy branches.
-- Cleans intermediate commits by making them a single commit, which can be helpful for DevOps teams.
 
-#### Git Merge
 
-- Simple and familiar.
-- Preserves complete history and chronological order.
-- Maintains the context of the branch.
 
-Using git for version control allows for powerful collaboration in tech teams. Like any tool, if misused, it can also cause some serious headaches. After working with a wide variety of team sizes and dynamics, I’ve found that the `squash and rebase workflow` helps make the collaboration process more efficient and a hell of a lot less painful.
+**Git rebase and squash | merge vs rebase****What is git merge?**Git merge is a command that allows you to merge branches from Git.**What is git rebase?**Git rebase is a command that allows developers to integrate changes from one branch to another.**git Rebase vs. Merge: Similarities and Differences**Git rebase and merge both integrate changes from one branch into another. Where they differ is how it's done. Git rebase moves a feature branch into a master. Git merge adds a new commit, preserving the history.**git Rebase vs. Merge: Which to Use**Some developers believe you should always rebase. And others think that you should always merge. Each side has benefits.**Benefits**Here are the top three benefits for Git rebase and for Git merge.**Git Rebase**Streamlines a potentially complex history.Avoids merge commit “noise” in busy repos with busy branches.Cleans intermediate commits by making them a single commit, which can be helpful for DevOps teams.**Git Merge**Simple and familiar.Preserves complete history and chronological order.Maintains the context of the branch.Using git for version control allows for powerful collaboration in tech teams. Like any tool, if misused, it can also cause some serious headaches. After working with a wide variety of team sizes and dynamics, I’ve found that the squash and rebase workflow helps make the collaboration process more efficient and a hell of a lot less painful.
 
-## What is the squash rebase workflow?
-
-It’s simple – before you merge a feature branch back into your main branch (often `master` or `develop`), your feature branch should be squashed down to a single buildable commit, and then rebased from the up-to-date main branch. Here’s a breakdown.
-
-Pull master branch
-
-```
-git pull origin master
-```
-
-Create bug/feature branch
-
-```
-git checkout -b branchName
-```
-
-Make changes as needed with as many commits that you need to. Make sure the final commit is buildable and all tests pass.
-
-Get the number of commits from the start of your branch. There are a couple of ways to get this. You can simply `git log` and count your commits, or
-
-```
-git log --graph --decorate --pretty=oneline --abbrev-commit
-```
-
-which will show a graph of your commit log history and may be easier to visualize your commits. Sometimes you will have large enough number of commits that counting can become troublesome. In that case grab the SHA from the last commit that your branch branches from.
-
-Squash to 1 commit.
-
-```
-git rebase -i HEAD~[NUMBER OF COMMITS]
-```
-
-OR
-
-```
-git rebase -i [SHA]
-```
-
-If you have previously pushed your code to a remote branch, you will need to force push.
-
-```
-git push origin branchName --force
-```
-
-Checkout master branch
-
-```
-git checkout master
-```
-
-Pull master branch
-
-```
-git pull origin master
-```
-
-Checkout bug/feature branch
-
-```
-git checkout branchName
-```
-
-Rebase from master
-
-```
-git rebase master
-```
-
-Handle any conflicts and make sure your code builds and all tests pass. Force push branch to remote.
-
-```
-git push origin branchName --force
-```
-
-Checkout, merge, and push into master
-
-```
+**What is the squash rebase workflow?**It’s simple – before you merge a feature branch back into your main branch (often master or develop), your feature branch should be squashed down to a single buildable commit, and then rebased from the up-to-date main branch. Here’s a breakdown.Pull master branchgit pull origin masterCreate bug/feature branchgit checkout -b branchNameMake changes as needed with as many commits that you need to. Make sure the final commit is buildable and all tests pass.Get the number of commits from the start of your branch. There are a couple of ways to get this. You can simply git log and count your commits, orgit log --graph --decorate --pretty=oneline --abbrev-commitwhich will show a graph of your commit log history and may be easier to visualize your commits. Sometimes you will have a large enough number of commits that counting can become troublesome. In that case grab the SHA from the last commit that your branch branches from.Squash to 1 commit.
+git rebase -i HEAD~[NUMBER OF COMMITS]OR
+git rebase -i [SHA]If you have previously pushed your code to a remote branch, you will need to force push.
+git push origin branchName --forceCheckout master branch
+git checkout masterPull master branch
+git pull origin masterCheckout bug/feature branch
+git checkout branchNameRebase from master
+git rebase masterHandle any conflicts and make sure your code builds and all tests pass. Force push branch to remote.
+git push origin branchName --forceCheckout, merge, and push into master
 git checkout master
 git merge branchName
 git push origin master
-```
 
-## Why should you adopt this workflow?
-
-If you follow this process it guarantees that ALL commits in master build and pass tests. This simple fact makes debugging an issue much easier. You can use **git** bisect when trying to find the source of a bug. Git bisect becomes almost completely ineffective  if there are broken commits on the master branch; if you jump to a commit that isn’t clean, it’s difficult or impossible to tell if it introduced the bug.
-
-The process also cleans up your git log. Have you ever seen a git log graph that looks like this?
-
-![img](https://blog.carbonfive.com/wp-content/uploads/2017/08/Screen-Shot-2017-07-10-at-3.28.16-PM-1-470x428.png)
-
-This is incredibly hard to discern what is going on, especially when you compare it to what my process makes the history look like:
-
-![img](https://blog.carbonfive.com/wp-content/uploads/2017/08/Screen-Shot-2017-07-10-at-3.39.18-PM-1-470x396.png)
-
-Because each commit contains all the code for a feature or bug fix, you can easily see the whole unit of work in a commit, and you don’t have to  worry about checking out the correct commit from a branch.
-
-My favorite outcome of this workflow is that it makes handling conflicts from rebasing simple. Since you’ve squashed down to one commit, you only have to deal with those conflicts once, rather than having to work against half-baked code. It reduces the risk of losing code when dealing with the conflicts.
-
-## So what are the drawbacks?
-
-Since we’re squashing commits and rebasing, we are literally changing the history for the repository. Some people feel that history should reflect your true history, the good the bad and the ugly. I propose a clean history is more valuable than one that is hard to understand. Not all history is lost; diehards can still see the original history in the ref log. Another small drawback is that we lose some granularity when we squash our commits. If you really want to have multiple commits for a feature, at least squash down so that each commit builds and passes tests. While this workflow can be dangerous if you don’t have an understanding of what you are doing, after minimal education on the matter, this process is extremely safe.
-
-## TLDR
-
-When it comes to squashing and rebasing your commits, the pros significantly outweigh the cons. It speeds up your debugging process, cleans up your history, reduces the pain from merge conflicts and makes collaboration in your team much better.
-
-## Bibliography
-
-https://www.youtube.com/watch?v=2ReR1YJrNOM
-https://www.perforce.com/blog/vcs/git-rebase-vs-merge-which-better
-https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/
+**Why should you adopt this workflow?**If you follow this process it guarantees that ALL commits in master build and pass tests. This simple fact makes debugging an issue much easier. You can use **git** bisect when trying to find the source of a bug. Git bisect becomes almost completely ineffective if there are broken commits on the master branch; if you jump to a commit that isn’t clean, it’s difficult or impossible to tell if it introduced the bug.The process also cleans up your git log. Have you ever seen a git log graph that looks like this?![img](https://lh4.googleusercontent.com/S95PYbkfOrA9qC2xbN6nb_3OLCNYVADOcfH9YbMKt-bVOloUUmWouH6hUVqtxm2qCUXVpgkjhrInlRkgQzVuAktM2oOmi5L_q4C9g1ct7_UY6QdXndSL7HCr9N1FJGS7zwClFfCj)This is incredibly hard to discern what is going on, especially when you compare it to what my process makes the history look like:![img](https://lh3.googleusercontent.com/lKkbxaIoUNLK5Csn4RDtRAUJl5eNMAutKOzu_w54xUjI5iyiJCjLx4Q0xpXv41nOCdtJ47eO2FNwRDLYRe_VEBG5odrubCZZnXk6LVU088ASuZJn75wPAyfsTDJNTRkuuFqbxoPv)Because each commit contains all the code for a feature or bug fix, you can easily see the whole unit of work in a commit, and you don’t have to worry about checking out the correct commit from a branch.My favorite outcome of this workflow is that it makes handling conflicts from rebasing simple. Since you’ve squashed down to one commit, you only have to deal with those conflicts once, rather than having to work against half-baked code. It reduces the risk of losing code when dealing with the conflicts.**So what are the drawbacks?**Since we’re squashing commits and rebasing, we are literally changing the history for the repository. Some people feel that history should reflect your true history, the good the bad and the ugly. I propose a clean history is more valuable than one that is hard to understand. Not all history is lost; diehards can still see the original history in the ref log. Another small drawback is that we lose some granularity when we squash our commits. If you really want to have multiple commits for a feature, at least squash down so that each commit builds and passes tests. While this workflow can be dangerous if you don’t have an understanding of what you are doing, after minimal education on the matter, this process is extremely safe.**TLDR**When it comes to squashing and rebasing your commits, the pros significantly outweigh the cons. It speeds up your debugging process, cleans up your history, reduces the pain from merge conflicts and makes collaboration in your team much better.
+https://www.youtube.com/watch?v=2ReR1YJrNOMhttps://www.perforce.com/blog/vcs/git-rebase-vs-merge-which-betterhttps://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/
