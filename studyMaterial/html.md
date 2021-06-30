@@ -5,3 +5,8 @@
 https://www.w3schools.com/html/html_accessibility.asp
 https://www.w3schools.com/html/html5_semantic_elements.asp
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+
+
+## Inputs
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
